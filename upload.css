@@ -1,0 +1,42 @@
+main
+{margin:0 auto; width:max-content;}
+h1
+{text-align:center;}
+
+div.drop
+{display:inline-block; margin-right:50px; padding:10px; width:300px; height:200px; background-color:#ddd;}
+div.drop:last-child
+{margin-right:0;}
+div.drop h4
+{margin-top:0;}
+
+#progress
+{position:fixed; bottom:0; right:0;}
+#progress>div
+{padding:10px; width:400px; border:1px solid #ddd; background-color:#eee; color:#000;}
+#progress>div:first-child
+{cursor:pointer;}
+#progress>div:first-child h4
+{margin:0 0 5px 0;}
+#progress>div:first-child progress
+{width:100%; height:20px; border:0px solid #ddd;}
+#progress>div:last-child
+{height:400px; overflow:auto;}
+#progress>div:last-child div[id|="progress"]
+{margin-bottom:10px; font-size:12px; font-weight:bold;}
+#progress>div:last-child div[id|="progress"]:last-child
+{margin-bottom:0;}
+#progress>div:last-child div[id|="progress"].wait
+{opacity:0.5;}
+#progress>div:last-child div[id|="progress"].done
+{color:#060;}
+#progress>div:last-child div[id|="progress"].fail
+{color:#f00;}
+#progress>div:last-child div[id|="progress"] p
+{margin:0; font-size:12px; font-weight:bold;}
+#progress>div:last-child div[id|="progress"] p
+{margin:0;}
+#progress>div:last-child div[id|="progress"] p+p
+{margin-top:5px;}
+#progress>div:last-child div[id|="progress"] progress
+{width:100%;}
